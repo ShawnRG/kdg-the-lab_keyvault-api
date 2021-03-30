@@ -1,0 +1,15 @@
+# tls.yaml
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: "nginx"    
+    cert-manager.io/issuer: letsencrypt-prod
+  tls:
+    - hosts:
+        - labrats.shawnross.dev
+      secretName: openfaas-crt
+  hosts:
+    - host: labrats.shawnross.dev
+      serviceName: gateway
+      servicePort: 8080
+      path: /

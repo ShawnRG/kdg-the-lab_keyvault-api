@@ -1,0 +1,111 @@
+version: 1.0
+provider:
+  name: openfaas
+  # Default gateway parameter can be overriden with the --gateway parameter
+  gateway: https://labrats.shawnross.dev/
+functions:
+
+  # =====================
+  # Certificate functions
+  # =====================
+  keyvault-certificate-store:
+    lang: dockerfile
+    handler: ./api/KeyVaultCertificateStore
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/certificate-store:latest
+    secrets:
+      - gitlabregistry
+      - keyvault-secret
+  keyvault-certificate-delete:
+    lang: dockerfile
+    handler: ./api/KeyVaultCertificateDelete
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/certificate-delete:latest
+    secrets:
+      - gitlabregistry
+      - keyvault-secret
+  keyvault-certificate-get:
+    lang: dockerfile
+    handler: ./api/KeyVaultCertificateGet/
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/certificate-get:latest
+    secrets:
+    # Secret that is added to the cluster that contains the docker-registry credentials
+      - gitlabregistry
+      - keyvault-secret
+  # =====================
+  # Secret functions
+  # =====================
+  keyvault-secret-store:
+    lang: dockerfile
+    handler: ./api/KeyVaultSecretStore
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/secret-store:latest
+    secrets:
+      - gitlabregistry
+      - keyvault-secret
+  keyvault-secret-delete:
+    lang: dockerfile
+    handler: ./api/KeyVaultSecretDelete
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/secret-delete:latest
+    secrets:
+      - gitlabregistry
+      - keyvault-secret      
+  keyvault-secret-get:
+    lang: dockerfile
+    handler: ./api/KeyVaultSecretGet
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/secret-get:latest
+    secrets:
+      - gitlabregistry
+      - keyvault-secret
+  keyvault-secret-rotate:
+    lang: dockerfile
+    handler: ./api/KeyVaultSecretRotate
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/secret-rotate:latest
+    secrets:
+      - gitlabregistry
+      - keyvault-secret
+  keyvault-credential-rotator:
+    lang: dockerfile
+    handler: ./api/KeyVaultCredentialRotator
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/credential-rotator:latest
+    secrets:
+      - gitlabregistry
+      - keyvault-secret
+
+  # =====================
+  # Key functions
+  # =====================
+  keyvault-key-get:
+    lang: dockerfile
+    handler: ./api/KeyVaultKeyGet/
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/key-get:latest
+    secrets:
+        - gitlabregistry
+        - keyvault-secret
+  keyvault-key-delete:
+    lang: dockerfile
+    handler: ./api/KeyVaultKeyDelete/
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/key-delete:latest
+    secrets:
+      - gitlabregistry
+      - keyvault-secret
+  keyvault-key-store:
+    lang: dockerfile
+    handler: ./api/KeyVaultKeyStore/
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/key-store:latest
+    secrets:
+      - gitlabregistry
+      - keyvault-secret 
+  
+  keyvault-key-encrypt:
+    lang: dockerfile
+    handler: ./api/KeyVaultKeyEncrypt/
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/key-encrypt:latest
+    secrets:
+      - gitlabregistry
+      - keyvault-secret
+  keyvault-key-decrypt:
+    lang: dockerfile
+    handler: ./api/KeyVaultKeyDecrypt/
+    image: registry.gitlab.com/kdg-ti/the-lab/teams-2020-2021/labrats/keyvault-api/key-decrypt:latest
+    secrets:
+      - gitlabregistry
+      - keyvault-secret
+

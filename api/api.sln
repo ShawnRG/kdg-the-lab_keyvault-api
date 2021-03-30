@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultSecretDelete", "KeyVaultSecretDelete\KeyVaultSecretDelete.csproj", "{7EC578C4-DB57-42F4-AC9F-E9EE858C2AB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultCertificateDelete", "KeyVaultCertificateDelete\KeyVaultCertificateDelete.csproj", "{DF5BF1AB-4C40-46D1-9C5B-6FE5C0D5A82A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultSecretGet", "KeyVaultSecretGet\KeyVaultSecretGet.csproj", "{955C7BAA-0B91-4EF5-9201-3F5975B1E9C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultSecretStore", "KeyVaultSecretStore\KeyVaultSecretStore.csproj", "{ECE62DA0-B04D-4402-A835-E1C7C10996CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultCertificateStore", "KeyVaultCertificateStore\KeyVaultCertificateStore.csproj", "{017B2B03-EC8C-4E87-B198-0464ED9ACF15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultCertificateGet", "KeyVaultCertificateGet\KeyVaultCertificateGet.csproj", "{CF683BDD-C781-49DF-B4B7-86144BD1F9CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyvaultApi.Tests", "KeyVaultApi.Tests\KeyvaultApi.Tests.csproj", "{AC92FCC3-DB50-4D16-8946-3C51F6EDFFF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultKeyGet", "KeyVaultKeyGet\KeyVaultKeyGet.csproj", "{BF967010-4A57-4F73-887D-036FB81B33F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultKeyDelete", "KeyVaultKeyDelete\KeyVaultKeyDelete.csproj", "{0D950C65-5D08-49A4-8558-148511FA8540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultSecretRotate", "KeyVaultSecretRotate\KeyVaultSecretRotate.csproj", "{B76A932A-1481-43DF-91CF-E59072B4D417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultKeyStore", "KeyVaultKeyStore\KeyVaultKeyStore.csproj", "{A7670E14-CE1E-4B25-BBE4-5C398C1EB7F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultKeyEncrypt", "KeyVaultKeyEncrypt\KeyVaultKeyEncrypt.csproj", "{2A97EC3D-80B6-4F00-99A5-10E702336F4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultCredentialRotator", "KeyVaultCredentialRotator\KeyVaultCredentialRotator.csproj", "{77CC0F98-7591-4195-B92D-9FB915DE29AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultKeyDecrypt", "KeyVaultKeyDecrypt\KeyVaultKeyDecrypt.csproj", "{3441C591-277E-49FE-9F90-F65BD9BC435F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EC578C4-DB57-42F4-AC9F-E9EE858C2AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EC578C4-DB57-42F4-AC9F-E9EE858C2AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EC578C4-DB57-42F4-AC9F-E9EE858C2AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EC578C4-DB57-42F4-AC9F-E9EE858C2AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5BF1AB-4C40-46D1-9C5B-6FE5C0D5A82A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5BF1AB-4C40-46D1-9C5B-6FE5C0D5A82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5BF1AB-4C40-46D1-9C5B-6FE5C0D5A82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5BF1AB-4C40-46D1-9C5B-6FE5C0D5A82A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955C7BAA-0B91-4EF5-9201-3F5975B1E9C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955C7BAA-0B91-4EF5-9201-3F5975B1E9C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955C7BAA-0B91-4EF5-9201-3F5975B1E9C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955C7BAA-0B91-4EF5-9201-3F5975B1E9C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECE62DA0-B04D-4402-A835-E1C7C10996CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECE62DA0-B04D-4402-A835-E1C7C10996CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECE62DA0-B04D-4402-A835-E1C7C10996CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECE62DA0-B04D-4402-A835-E1C7C10996CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{017B2B03-EC8C-4E87-B198-0464ED9ACF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{017B2B03-EC8C-4E87-B198-0464ED9ACF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{017B2B03-EC8C-4E87-B198-0464ED9ACF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{017B2B03-EC8C-4E87-B198-0464ED9ACF15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF683BDD-C781-49DF-B4B7-86144BD1F9CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF683BDD-C781-49DF-B4B7-86144BD1F9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF683BDD-C781-49DF-B4B7-86144BD1F9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF683BDD-C781-49DF-B4B7-86144BD1F9CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC92FCC3-DB50-4D16-8946-3C51F6EDFFF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC92FCC3-DB50-4D16-8946-3C51F6EDFFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC92FCC3-DB50-4D16-8946-3C51F6EDFFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC92FCC3-DB50-4D16-8946-3C51F6EDFFF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF967010-4A57-4F73-887D-036FB81B33F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF967010-4A57-4F73-887D-036FB81B33F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF967010-4A57-4F73-887D-036FB81B33F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF967010-4A57-4F73-887D-036FB81B33F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7670E14-CE1E-4B25-BBE4-5C398C1EB7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7670E14-CE1E-4B25-BBE4-5C398C1EB7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76A932A-1481-43DF-91CF-E59072B4D417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76A932A-1481-43DF-91CF-E59072B4D417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76A932A-1481-43DF-91CF-E59072B4D417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76A932A-1481-43DF-91CF-E59072B4D417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A97EC3D-80B6-4F00-99A5-10E702336F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A97EC3D-80B6-4F00-99A5-10E702336F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A97EC3D-80B6-4F00-99A5-10E702336F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A97EC3D-80B6-4F00-99A5-10E702336F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D950C65-5D08-49A4-8558-148511FA8540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D950C65-5D08-49A4-8558-148511FA8540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D950C65-5D08-49A4-8558-148511FA8540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D950C65-5D08-49A4-8558-148511FA8540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77CC0F98-7591-4195-B92D-9FB915DE29AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77CC0F98-7591-4195-B92D-9FB915DE29AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77CC0F98-7591-4195-B92D-9FB915DE29AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77CC0F98-7591-4195-B92D-9FB915DE29AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3441C591-277E-49FE-9F90-F65BD9BC435F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3441C591-277E-49FE-9F90-F65BD9BC435F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3441C591-277E-49FE-9F90-F65BD9BC435F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3441C591-277E-49FE-9F90-F65BD9BC435F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
